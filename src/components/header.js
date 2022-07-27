@@ -28,7 +28,7 @@ export default function Navbar() {
           <div
            className={
               "lg:flex items-center px-4 bg-red w-full lg:w-auto lg:bg-transparent" +
-              (isNavOpen ? " flex " : " hidden") // Applies the correct class based on the navigation state
+              (isNavOpen ? " flex absolute lg:relative top-12 lg:top-0" : " hidden") // Applies the correct class based on the navigation state
             }
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto py-2 lg:py-0">
