@@ -7,8 +7,8 @@ export default function Navbar() {
     const [isNavOpen, setIsNavOpen] = useState(false); // Sets isNavOpen state as false
     return (
     <>
-      <nav className="relative flex flex-wrap pt-3 lg:py-3 mb-3 font-poppins border-red border-b-2">
-        <div className="lg:container lg:mx-auto flex flex-wrap items-center justify-between w-full">
+      <nav className="bg-white sticky z-10 top-0 relative flex flex-wrap pt-3 lg:py-3 mb-3 font-poppins border-red border-b-2">
+        <div className="lg:container lg:mx-auto relative flex flex-wrap items-center justify-between w-full">
           <div className={"w-full px-4 relative flex justify-between lg:w-auto lg:block lg:justify-start pb-4 lg:pb-0" + (isNavOpen ? " pb-4" : " ")}>
             <div className="w-16 flex">
                 <img src={Logo} alt="Logo" className="w-full"/>
@@ -28,7 +28,7 @@ export default function Navbar() {
           <div
            className={
               "lg:flex items-center px-4 bg-red w-full lg:w-auto lg:bg-transparent" +
-              (isNavOpen ? " flex " : " hidden") // Applies the correct class based on the navigation state
+              (isNavOpen ? " flex absolute lg:relative top-12 lg:top-0" : " hidden") // Applies the correct class based on the navigation state
             }
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto py-2 lg:py-0">
