@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react"; // import state for the hamburger bar
 import Logo from "./logo.svg";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     const [isNavOpen, setIsNavOpen] = useState(false); // Sets isNavOpen state as false
@@ -32,28 +33,13 @@ export default function Navbar() {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto py-2 lg:py-0">
               <li className="nav-item md:mx-2">
-                <a
-                  className="py-2 flex items-center text-white lg:text-black hover:opacity-75"
-                  href="/dashboard"
-                >
-                    Dashboard
-                </a>
+                <Link to="/dashboard" className="py-2 flex items-center text-white lg:text-black hover:opacity-75">Dashboard</Link>
               </li>
               <li className="nav-item md:mx-2">
-                <a
-                  className="py-2 flex items-center text-white lg:text-black hover:opacity-75"
-                  href="/recipes"
-                >
-                    Public Recipes
-                </a>
+                <Link to="/public-recipes" className="py-2 flex items-center text-white lg:text-black hover:opacity-75">Public Recipes</Link>
               </li>
               <li className="nav-item md:mx-2">
-                <a
-                  className="py-2 flex items-center text-white lg:text-black hover:opacity-75"
-                  href="/calculators"
-                >
-                    Calculators
-                </a>
+                <Link to="/social-feed" className="py-2 flex items-center text-white lg:text-black hover:opacity-75">Social Feed</Link>
               </li>
             </ul>
           </div>

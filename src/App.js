@@ -1,13 +1,11 @@
-import Header from './components/header';
-import Dashboard from './screens/dashboard';
+import React from 'react';
 
-function App() {
+import Header from './components/header';
+
+export default function App() {
   return (
     <div>
-    <Header/>
-    <Dashboard/>
+      <Header/>
     </div>
   );
 }
-
-export default App;
