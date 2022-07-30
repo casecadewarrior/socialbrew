@@ -10,6 +10,7 @@ import App from './App';
 import PublicRecipes from "./screens/public-recipes";
 import SocialFeed from "./screens/social-feed";
 import Dashboard from "./screens/dashboard";
+import UserProfile from "./screens/user-profile";
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,7 @@ root.render(
       <Route path="public-recipes" element={<PublicRecipes />} />
       <Route path="social-feed" element={<SocialFeed />} />
       <Route path="dashboard" element={<Dashboard />} />
+      <Route path="profile" element={<UserProfile />} />
       <Route
         path="*"
         element={
