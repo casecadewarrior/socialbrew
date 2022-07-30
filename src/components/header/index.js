@@ -7,7 +7,7 @@ export default function Navbar() {
     const [isNavOpen, setIsNavOpen] = useState(false); // Sets isNavOpen state as false
     return (
     <>
-      <nav className="bg-white sticky z-10 top-0 relative flex flex-wrap pt-3 lg:py-3 mb-3 font-poppins border-red border-b-2">
+      <nav className="bg-white sticky z-10 top-0 relative flex flex-wrap pt-3 lg:py-3 font-poppins border-red border-b-2">
         <div className="lg:container lg:mx-auto relative flex flex-wrap items-center justify-between w-full">
           <div className={"w-full px-4 relative flex justify-between lg:w-auto lg:block lg:justify-start pb-4 lg:pb-0" + (isNavOpen ? " pb-4" : " ")}>
             <div className="w-16 flex">
