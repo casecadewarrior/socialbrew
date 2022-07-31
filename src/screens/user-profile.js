@@ -7,7 +7,7 @@ import Header from './../components/header';
 import ProfileHeader from './../components/profileHeader';
 import StarRating from './../components/starRating';
 
-const profileUser = data[2]; // sets user for the profile, this means we can access data connected to the user
+//const profileUser = data[2]; // sets user for the profile, this means we can access data connected to the user
 const posts = postData;
 
 export default function SocialFeed() {
