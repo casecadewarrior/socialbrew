@@ -12,7 +12,13 @@ export default
         postImageAlt: "Shauns profile",
         videoPath: tempVideo,
         likeCount: 134,
-        recipeId: null, 
+        recipeId: null,
+        recipeName: null, 
+        recipeBeerStyle: null, 
+        recipeAbv: null, 
+        recipeImage: null,
+        recipeUrl: null, 
+        recipePublicRating: null,  
     },
     {
         id: 2,
@@ -35,6 +41,13 @@ export default
         postImageAlt: "Shauns profile",
         likeCount: 34,
         recipeId: 2,
+        recipeName: 'Punk IPA Clone Recipe', 
+        recipeBeerStyle: 'IPA', 
+        recipeAbv: 5.8, 
+        recipeImage: null,
+        recipeUrl: '/recipe/3', 
+        recipeSummary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur, leo ut molestie aliquet.',
+        recipePublicRating: 5,
     },
     
   ]

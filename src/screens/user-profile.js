@@ -36,7 +36,7 @@ export default function SocialFeed() {
                         : ''}
                         {post.videoPath ? 
                         <div className="post-item__content--video w-full">
-                            <video src={post.videoPath} width="600" height="300" controls="controls" autoplay="true" />
+                            <video src={post.videoPath} width="600" height="300" controls="controls" autoPlay={true} />
                         </div>
                         : '' }
                         {post.recipeId ? 
@@ -47,11 +47,11 @@ export default function SocialFeed() {
                                         <img src="https://image.shutterstock.com/image-photo/handsome-adult-brewer-inspecting-process-600w-1433953739.jpg" alt="random alt"/>
                                     </div>
                                     <div className="w-1/2 pl-2 text-xs">
-                                        <h2 className="font-bold text-sm">Beer Name</h2>
-                                        <h3><span className="font-bold">Style:</span> NEIPA</h3>
-                                        <h4><span className="font-bold">ABV:</span> 6.2%</h4>
+                                        <h2 className="font-bold text-sm">{post.recipeName}</h2>
+                                        <h3><span className="font-bold">Style:</span> {post.recipeBeerStyle}</h3>
+                                        <h4><span className="font-bold">ABV:</span> {post.recipeAbv}%</h4>
                                         <div className="text-xs mt-2">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur, leo ut molestie aliquet.</p>
+                                            <p>{post.recipeSummary}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -61,7 +61,7 @@ export default function SocialFeed() {
                                         <StarRating />
                                     </div>
                                     <div className="w-1/3 flex">
-                                        <a href="/recipe/id" className="uppercase text-red font-bold text-sm p-2 text-center w-full">View Recipe</a>
+                                        <a href={post.recipeUrl} className="uppercase text-red font-bold text-sm p-2 text-center w-full">View Recipe</a>
                                     </div>
                                 </div>
                             </div>
