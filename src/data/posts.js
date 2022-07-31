@@ -8,6 +8,7 @@ export default
         postBodyText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur, leo ut molestie aliquet, felis nulla volutpat libero, non gravida nunc mi at ante. Phasellus sed magna blandit, auctor risus ac, aliquet tellus.',
         postImageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
         postImageAlt: "Shauns profile",
+        likeCount: 134,
     },
     {
         id: 2,
@@ -17,6 +18,7 @@ export default
         postBodyText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur, leo ut molestie aliquet, felis nulla volutpat libero, non gravida nunc mi at ante. Phasellus sed magna blandit, auctor risus ac, aliquet tellus.',
         postImageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
         postImageAlt: "Shauns profile",
+        likeCount: 14,
     },
     {
         id: 3,
@@ -26,6 +28,7 @@ export default
         postBodyText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur, leo ut molestie aliquet, felis nulla volutpat libero, non gravida nunc mi at ante. Phasellus sed magna blandit, auctor risus ac, aliquet tellus.',
         postImageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
         postImageAlt: "Shauns profile",
+        likeCount: 34,
     },
     
   ]
