@@ -57,10 +57,10 @@ export default function AbvCalculator() {
                             </div>
                             <div className="w-full p-4">
                                 <div className="md:w-2/3 flex items-center justify-center">
-                                    <button className="bg-white border-red border-2 hover:bg-red focus:shadow-outline focus:outline-none text-red hover:text-red font-bold py-2 px-4 mx-2" type="button" onClick={clearState}>
+                                    <button className="bg-white border-red border-2 hover:bg-red focus:shadow-outline focus:outline-none text-red hover:text-white font-bold py-2 px-4 mx-2" type="button" onClick={clearState}>
                                         Reset
                                     </button>
-                                    <button className="bg-red border-transparent border-2 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 mx-2" type="submit">
+                                    <button className="bg-red border-transparent border-2 hover:bg-redDark focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 mx-2" type="submit">
                                         Submit
                                     </button>
                                 </div>

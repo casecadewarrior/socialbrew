@@ -12,6 +12,7 @@ module.exports = {
        },
        colors: {
         red: '#d7402a',
+        redDark: '#ac3322',
       },
     },
   },

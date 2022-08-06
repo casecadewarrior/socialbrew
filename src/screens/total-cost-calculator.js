@@ -54,18 +54,20 @@ export default function AbvCalculator() {
                     </div>
                     <form className="w-full max-w-lg" onSubmit={handleSubmit}>
                         <div className="flex flex-wrap -mx-3 mb-6">
-                            <div className="w-full px-3 mb-4">
-                                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Number of pints</label>
-                                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white" id="original-gravity" name="pints" type="number" value={totalCostCalc.pints} placeholder="Pints" onChange={handleChange}/>
-                                <p className="text-red-500 text-xs italic">British imperial pint of 20 imperial fluid ounces (568 ml)</p>
-                            </div>
-                            <div className="w-full px-3 mb-4">
-                                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Currency</label>
-                                <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="currency" value={totalCostCalc.currency} onChange={handleChange}>
-                                    <option >Choose a currency</option>
-                                    <option value="$">US Dollars</option>
-                                    <option value="£">British Pound</option>
-                                </select>
+                            <div className="w-full flex border-gray-300 border-b-2 mb-4">
+                                <div className="w-1/2 px-3 mb-4">
+                                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Number of pints</label>
+                                    <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white" id="original-gravity" name="pints" type="number" value={totalCostCalc.pints} placeholder="Pints" onChange={handleChange}/>
+                                    <p className="text-red-500 text-xs italic">British imperial pint of 20 imperial fluid ounces (568 ml)</p>
+                                </div>
+                                <div className="w-1/2 px-3">
+                                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Currency</label>
+                                    <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="currency" value={totalCostCalc.currency} onChange={handleChange}>
+                                        <option >Choose a currency</option>
+                                        <option value="$">US Dollars</option>
+                                        <option value="£">British Pound</option>
+                                    </select>
+                                </div>
                             </div>
                             <div className="w-1/2 px-3 mb-4 md:mb-0">
                                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
@@ -106,9 +108,9 @@ export default function AbvCalculator() {
                             </div>
                             <div className="w-full p-4">
                                 <div className="md:w-2/3 flex items-center justify-center">
-                                    <button className="bg-white border-red border-2 hover:bg-red text-red font-bold hover:bg-white py-2 px-4 mx-2" type="button" onClick={clearState}>Reset</button>
-                                    <button className="bg-red border-transparent border-2 hover:bg-purple-400 text-white font-bold py-2 px-4 mx-2">
-                                        Update
+                                    <button className="bg-white border-red border-2 hover:bg-red text-red hover:text-white font-bold py-2 px-4 mx-2" type="button" onClick={clearState}>Reset</button>
+                                    <button className="bg-red border-transparent border-2 hover:bg-redDark text-white font-bold py-2 px-4 mx-2">
+                                        Submit
                                     </button>
                                 </div>
                             </div>
