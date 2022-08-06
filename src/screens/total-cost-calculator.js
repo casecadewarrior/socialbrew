@@ -25,7 +25,6 @@ export default function AbvCalculator() {
     };
 
     const handleSubmit = (event) => {
-        
         event.preventDefault();
         let currencyValue = totalCostCalc.currency;
         let pintsValue = parseFloat(totalCostCalc.pints);
@@ -45,7 +44,7 @@ export default function AbvCalculator() {
             <Header/>
             <main>
                 <div className="font-poppins w-full p-4 my-4">
-                    <h2 className="font-bold text-lg text-red mb-4">Abv Calculator</h2>
+                    <h2 className="font-bold text-lg text-red mb-4">Total Cost Calculator</h2>
                     <div className="w-full mb-8">
                         <p>sdkshdjhjkshdjkh hjh jhskjdh jkshd kjsjk jhskjdh jkshd kjsjk. sdkshdjhjkshdjkh hjh jhskjdh jkshd kjsjk jhskjdh jkshd kjsjk. sdkshdjhjkshdjkh hjh jhskjdh jkshd kjsjk jhskjdh jkshd kjsjk.</p>
                     </div>
@@ -114,8 +113,6 @@ export default function AbvCalculator() {
                                     </button>
                                 </div>
                             </div>
-
-                            <p id='result-field'></p>
                         </div>
                     </form>
                 </div>
