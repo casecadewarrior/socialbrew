@@ -16,9 +16,9 @@ export default function Calculators() {
                         <a href="/brewing-calculators/abv" className="w-full block text-red text-right font-bold mt-2">View More</a>
                     </div>
                     <div className="w-full border-2 border-red p-4 mb-4">
-                        <h2 className="font-bold mb-4">IBU Calculator</h2>
+                        <h2 className="font-bold mb-4">Total price per pint calculator</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae tempus enim, id pharetra libero. Ut vel auctor est, id euismod neque. Etiam in lacus lorem. Maecenas metus ex, semper a ex.</p>
-                        <a href="/brewing-calculators/ibu" className="w-full block text-red text-right font-bold mt-2">View More</a>
+                        <a href="/brewing-calculators/total-cost" className="w-full block text-red text-right font-bold mt-2">View More</a>
                     </div>
                 </div>
             </div>
