@@ -18,10 +18,9 @@ export default function AbvCalculator() {
     };
 
     const handleSubmit = (event) => {
-        //const currencyText = document.getElementById('currency-text');
-        // prevents the submit button from refreshing the page
+        const currencyText = document.getElementById('currency-text');
         event.preventDefault();
-        //let currencyValue = totalCostCalc.currency;
+        let currencyValue = totalCostCalc.currency;
         let pintsValue = parseFloat(totalCostCalc.pints);
         let grainsValue = parseFloat(totalCostCalc.grains);
         let hopsValue = parseFloat(totalCostCalc.hops);
@@ -31,6 +30,7 @@ export default function AbvCalculator() {
         let electricGasValue = parseFloat(totalCostCalc.electricGas);
         let calculatedCost = (grainsValue + hopsValue + yeastValue + extrasValue + waterValue + electricGasValue) / pintsValue;
         console.log(calculatedCost);
+        currencyText.innerHTML = currencyValue + calculatedCost.toFixed(2);
     };
 
     return (
@@ -43,7 +43,7 @@ export default function AbvCalculator() {
                         <p>sdkshdjhjkshdjkh hjh jhskjdh jkshd kjsjk jhskjdh jkshd kjsjk. sdkshdjhjkshdjkh hjh jhskjdh jkshd kjsjk jhskjdh jkshd kjsjk. sdkshdjhjkshdjkh hjh jhskjdh jkshd kjsjk jhskjdh jkshd kjsjk.</p>
                     </div>
                     <div className="mb-6">
-                        <p>The cost per pint is <span className="text-4xl text-red" id="currency-text"></span> per pint.</p>
+                        <p>The cost per pint is <span className="text-4xl text-red" id="currency-text">?</span> per pint.</p>
                     </div>
                     <form className="w-full max-w-lg" onSubmit={handleSubmit}>
                         <div className="flex flex-wrap -mx-3 mb-6">
