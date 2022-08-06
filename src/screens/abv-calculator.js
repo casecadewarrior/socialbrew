@@ -2,19 +2,35 @@ import React from 'react';
 import Header from './../components/header';
 
 export default function AbvCalculator() {
+    const ogField = document.getElementById('original-gravity');
+    const fgField = document.getElementById('final-gravity');
+    //const resultText = document.getElementById('result-field');
+    let abvValue = 0;
+    let ogValue = 0;
+    let fgValue = 0;
+
+    const setOgValue = () => {
+        ogValue = parseFloat(ogField.value);
+        alert(ogValue);
+    }
+
+    const setFgValue = () => {
+        //fgValue = parseFloat(fgField.value);
+    }
+
+
     const calculateAbv = () => {
-        const ogField = document.getElementById('original-gravity');
-        const fgField = document.getElementById('final-gravity');
-        let ogValue = parseFloat(ogField.value);
-        let fgValue = parseFloat(fgField.value);
-        let abvValue = 0;
-        abvValue = (ogValue-fgValue)*131.25;
-        alert(abvValue.toFixed(2));
-        //alert(fgValue);
+        //ogValue = parseFloat(ogField.value);
+        //fgValue = parseFloat(fgField.value);
+        //abvValue = (ogValue-fgValue)*131.25;
+        alert(abvValue.toFixed(2)+"%");
+        //resultText.textContent = abvValue.toFixed(2);
     }
     const resetValue = () => {
-        //alert("Resetted");
-        //alert(newName.value);
+        //ogField.value = 0;
+        //fgField.value = 0;
+        //abvValue.value = 0;
+        //alert('clicked');
     }
     return (
         <div>
@@ -31,14 +47,15 @@ export default function AbvCalculator() {
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                                 Original Gravity
                             </label>
-                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="original-gravity" type="number" placeholder="Original Gravity" />
-                            <p className="text-red-500 text-xs italic">Please fill out this field.</p>
+                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white" id="original-gravity" type="number" placeholder="Original Gravity" onChange={setOgValue}/>
+                            <p className="text-red-500 text-xs italic">Format must be SG e.g (1.050)</p>
                             </div>
                             <div className="w-full md:w-1/2 px-3">
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                                 Final gravity
                             </label>
-                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="final-gravity" type="number" placeholder="Final Gravity" />
+                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="final-gravity" type="number" placeholder="Final Gravity" onChange={setFgValue}/>
+                            <p className="text-red-500 text-xs italic">Format must be SG e.g (1.050)</p>
                             </div>
                             <div className="w-full p-4">
                                 <div className="md:w-2/3 flex items-center justify-center">
@@ -50,6 +67,8 @@ export default function AbvCalculator() {
                                     </button>
                                 </div>
                             </div>
+
+                            <p id='result-field'></p>
                         </div>
                     </div>
                 </div>
