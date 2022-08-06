@@ -1,20 +1,26 @@
 import { useState } from "react";
 import Header from './../components/header';
 
+const initialState = {
+    pints: "",
+    currency: "",
+    grains: "",
+    hops: "",
+    yeast: "",
+    extras: "",
+    water: "",
+    electricGas: "",
+};
+
 export default function AbvCalculator() {
-    const [totalCostCalc, setTotalCostCalc] = useState({
-        pints: "",
-        currency: "",
-        grains: "",
-        hops: "",
-        yeast: "",
-        extras: "",
-        water: "",
-        electricGas: "",
-    });
+    const [totalCostCalc, setTotalCostCalc] = useState(initialState);
 
     const handleChange = (event) => {
         setTotalCostCalc({ ...totalCostCalc, [event.target.name]: event.target.value });
+    };
+
+    const clearState = () => {
+        setTotalCostCalc({ ...initialState });
     };
 
     const handleSubmit = (event) => {
@@ -99,6 +105,7 @@ export default function AbvCalculator() {
                             </div>
                             <div className="w-full p-4">
                                 <div className="md:w-2/3 flex items-center justify-center">
+                                    <button type="button" onClick={clearState}>Reset</button>
                                     <button className="bg-red border-transparent border-2 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 mx-2">
                                         Update
                                     </button>
