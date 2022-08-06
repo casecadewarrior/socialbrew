@@ -14,17 +14,18 @@ const initialState = {
 
 export default function AbvCalculator() {
     const [totalCostCalc, setTotalCostCalc] = useState(initialState);
-
+    const currencyText = document.getElementById('currency-text');
     const handleChange = (event) => {
         setTotalCostCalc({ ...totalCostCalc, [event.target.name]: event.target.value });
     };
 
     const clearState = () => {
         setTotalCostCalc({ ...initialState });
+        currencyText.innerHTML = '?';
     };
 
     const handleSubmit = (event) => {
-        const currencyText = document.getElementById('currency-text');
+        
         event.preventDefault();
         let currencyValue = totalCostCalc.currency;
         let pintsValue = parseFloat(totalCostCalc.pints);
@@ -105,8 +106,8 @@ export default function AbvCalculator() {
                             </div>
                             <div className="w-full p-4">
                                 <div className="md:w-2/3 flex items-center justify-center">
-                                    <button type="button" onClick={clearState}>Reset</button>
-                                    <button className="bg-red border-transparent border-2 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 mx-2">
+                                    <button className="bg-white border-red border-2 hover:bg-red text-red font-bold hover:bg-white py-2 px-4 mx-2" type="button" onClick={clearState}>Reset</button>
+                                    <button className="bg-red border-transparent border-2 hover:bg-purple-400 text-white font-bold py-2 px-4 mx-2">
                                         Update
                                     </button>
                                 </div>
