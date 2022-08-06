@@ -51,7 +51,7 @@ export default function AbvCalculator() {
                     <div className="mb-6">
                         <p>The cost per pint is <span className="text-4xl text-red" id="currency-text">?</span> per pint.</p>
                     </div>
-                    <form className="w-full max-w-lg" onSubmit={handleSubmit}>
+                    <form className="w-full" onSubmit={handleSubmit}>
                         <div className="flex flex-wrap -mx-3 mb-6">
                             <div className="w-full flex border-gray-300 border-b-2 mb-4">
                                 <div className="w-1/2 px-3 mb-4">
