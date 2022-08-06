@@ -39,7 +39,7 @@ export default function AbvCalculator() {
                     <div className="mb-6">
                         <p>The estimated ABV of your beer is <span className="text-4xl text-red" id="abv-text">?</span></p>
                     </div>
-                    <form className="w-full max-w-lg" onSubmit={handleSubmit}>
+                    <form className="w-full" onSubmit={handleSubmit}>
                         <div className="flex flex-wrap -mx-3 mb-6">
                             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
