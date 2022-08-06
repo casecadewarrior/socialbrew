@@ -7,10 +7,14 @@ import {
 } from "react-router-dom";
 import './index.css';
 import App from './App';
+
 import PublicRecipes from "./screens/public-recipes";
 import SocialFeed from "./screens/social-feed";
 import Dashboard from "./screens/dashboard";
 import UserProfile from "./screens/user-profile";
+import Calculators from "./screens/calculators";
+import AbvCalculator from "./screens/abv-calculator";
+import TotalCostCalculator from "./screens/total-cost-calculator";
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +25,9 @@ root.render(
       <Route path="public-recipes" element={<PublicRecipes />} />
       <Route path="social-feed" element={<SocialFeed />} />
       <Route path="dashboard" element={<Dashboard />} />
+      <Route path="brewing-calculators" element={<Calculators />} />
+      <Route path="brewing-calculators/abv" element={<AbvCalculator />} />
+      <Route path="brewing-calculators/total-cost" element={<TotalCostCalculator />} />
       <Route path="profile" element={<UserProfile />} />
       <Route
         path="*"
