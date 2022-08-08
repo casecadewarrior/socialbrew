@@ -7,7 +7,7 @@ const dashboardItems = [
         name: 'Public Recipes',
         verb: 'View',
         href: '/public-recipes',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        imageSrc: 'https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
         imageAlt: "#",
         comingSoon: true,
     },
@@ -16,16 +16,16 @@ const dashboardItems = [
         name: 'Social',
         verb: 'Gather',
         href: '/social',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        imageSrc: 'https://images.unsplash.com/photo-1532634922-8fe0b757fb13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1772&q=80',
         imageAlt: "#",
         comingSoon: true, 
     },
     {
         id: 3,
         name: 'Calculators',
-        verb: 'Understand',
-        href: '/calculators',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        verb: 'Work Out',
+        href: '/brewing-calculators',
+        imageSrc: 'https://images.unsplash.com/photo-1615332579037-3c44b3660b53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
         imageAlt: "#",
         comingSoon: true, 
     },
@@ -35,24 +35,19 @@ export default function Dashboard() {
     return (
     <main>
         <Header/>
-    
         <div className="bg-white">
-            <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-                    {dashboardItems.map((item) => (
-                    <div key={item.id} className="relative shadow-lg md:mb-2 bg-dashboard-item bg-cover bg-center h-56 w-full flex flex-col sm:mx-8">
-                        <a href={item.href} className="w-full flex items-center justify-center flex-col h-56">
-                            <h3 className="text-xl text-red bg-white py-3 px-5">
-                                {item.name}
-                            </h3>
-                            <h4 className="text-sm text-white bg-red inline p-2">
-                                {item.verb}
-                            </h4>
-                        </a>
-                    </div>
-                    ))}
-                </div>
+            {dashboardItems.map((item) => (
+            <div key={item.id} className="relative shadow-lg md:mb-2 bg-cover bg-center h-64 w-full flex flex-col" style={{ background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${item.imageSrc})`,backgroundSize: 'cover' }}>
+                <a href={item.href} className="w-full flex items-center justify-center flex-col h-64">
+                    <h3 className="text-xl text-red bg-white py-3 px-5">
+                        {item.name}
+                    </h3>
+                    <h4 className="text-sm text-white bg-red inline p-2">
+                        {item.verb}
+                    </h4>
+                </a>
             </div>
+            ))}
         </div>
     </main>
     )
