@@ -3,6 +3,8 @@ import { useState } from "react"; // import state for the hamburger bar
 import Logo from "./logo.svg";
 import { Link } from "react-router-dom";
 
+import WidthChecker from "../widthChecker";
+
 //This will be replaced by AWS Conigto object
 const authenticatedLoggedInUser = [{
   id: 1,
@@ -21,6 +23,7 @@ export default function Navbar() {
     const authUser = authenticatedLoggedInUser[0];
     return (
     <>
+      <WidthChecker/>
       <nav className="bg-white sticky z-10 top-0 relative flex flex-wrap pt-3 lg:py-3 font-poppins border-red border-b-2">
         <div className="lg:container lg:mx-auto relative flex flex-wrap items-center justify-between w-full">
           <div className={"w-full px-4 relative flex justify-between lg:w-auto lg:block lg:justify-start pb-4 lg:pb-0" + (isNavOpen ? " pb-4" : " ")}>
