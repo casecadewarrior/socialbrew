@@ -23,7 +23,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="public-recipes" element={<PublicRecipes />} />
-      <Route path="social-feed" element={<SocialFeed />} />
+      <Route path="social" element={<SocialFeed />} />
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="brewing-calculators" element={<Calculators />} />
       <Route path="brewing-calculators/abv" element={<AbvCalculator />} />
