@@ -13,6 +13,8 @@ module.exports = {
        colors: {
         red: '#d7402a',
         redDark: '#ac3322',
+        cream: '#eeefe7',
+        input: '#F6F6F6',
       },
     },
   },
