@@ -9,6 +9,7 @@ import './index.css';
 import App from './App';
 
 import PublicRecipes from "./screens/public-recipes";
+import MyRecipes from "./screens/my-recipes";
 import SocialFeed from "./screens/social-feed";
 import Dashboard from "./screens/dashboard";
 import UserProfile from "./screens/user-profile";
@@ -23,6 +24,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="public-recipes" element={<PublicRecipes />} />
+      <Route path="my-recipes" element={<MyRecipes />} />
       <Route path="social" element={<SocialFeed />} />
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="brewing-calculators" element={<Calculators />} />
