@@ -60,6 +60,9 @@ export default function Navbar() {
                 <Link to="/dashboard" className="py-2 flex items-center text-white lg:text-black hover:opacity-75">Dashboard</Link>
               </li>
               <li className="nav-item md:mx-2">
+                <Link to="/my-recipes" className="py-2 flex items-center text-white lg:text-black hover:opacity-75">My Recipes</Link>
+              </li>
+              <li className="nav-item md:mx-2">
                 <Link to="/public-recipes" className="py-2 flex items-center text-white lg:text-black hover:opacity-75">Public Recipes</Link>
               </li>
               <li className="nav-item md:mx-2">
