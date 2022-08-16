@@ -4,7 +4,7 @@ import StarRating from '.././starRating';
 export default function RecipeItem() {
     return (
         <>
-    <div className="post-item__content--recipe w-full mb-4">
+    <div className="post-item__content--recipe font-poppins w-full mb-4 px-4">
         <div className="w-full border-2 border-red">
             <div className="w-full p-2 flex">
                 <div className="w-1/2">

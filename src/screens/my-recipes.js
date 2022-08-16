@@ -1,4 +1,5 @@
 import React from 'react';
+import RecipeFilter from '../components/recipeFilter';
 import Header from './../components/header';
 import RecipeItem from './../components/recipeItem';
 
@@ -6,17 +7,16 @@ import RecipeItem from './../components/recipeItem';
 
 export default function PublicRecipes() {
     return (
-        <div>
+        <main>
             <Header/>
-            <main className='p-4'>
-                <RecipeItem />
-                <RecipeItem />
-                <RecipeItem />
-                <RecipeItem />
-                <RecipeItem />
-                <RecipeItem />
-                <RecipeItem />
-            </main>
-        </div>
+            <RecipeFilter />
+            <RecipeItem />
+            <RecipeItem />
+            <RecipeItem />
+            <RecipeItem />
+            <RecipeItem />
+            <RecipeItem />
+            <RecipeItem />
+        </main>
     );
 }
