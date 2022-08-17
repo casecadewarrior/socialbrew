@@ -41,7 +41,7 @@ export default function sharePostForm() {
                         <img src={RecipeShareIcon} alt="Recipe Select" width="35px"/>
                     </button>
                     <button onClick={uploadImage} type="button" className="mr-4">
-                        <img src={ImageShareIcon} alt="Image upload" width="35px"/>
+                        <img src={ImageShareIcon} alt="Icon upload Button" width="35px"/>
                     </button>
                 </div>
                 <button type="submit" className="bg-red hover:bg-redDark text-white py-2 px-4">Submit</button>

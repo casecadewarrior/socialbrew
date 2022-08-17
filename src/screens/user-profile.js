@@ -1,6 +1,5 @@
 import React from 'react';
 
-import data from "./../data/user-data.js";
 import postData from "./../data/posts.js";
 
 import Header from './../components/header';
