@@ -11,7 +11,7 @@ export default
         abv: '6.2%',
         srm: '13',
         ebc: '8',
-        volume: '20l / 5 gal',
+        volume: '20L / 5 gal',
         beerStyle: 'Double IPA',
         grains: [ 
             {
@@ -69,7 +69,7 @@ export default
         abv: '6.2%',
         srm: '13',
         ebc: '8',
-        volume: '20l / 5 gal',
+        volume: '20L / 5 gal',
         beerStyle: 'Double IPA',
         grains: [ 
             {
@@ -102,6 +102,6 @@ export default
                 yeastAmount: '2pkts - 30g', 
                 yeastType: 'Dried Yeast'
             }
-        ]
+        ], 
     },
   ]

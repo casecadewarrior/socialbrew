@@ -1,5 +1,8 @@
 import React from "react";
 import { useState } from "react"; // imports state for the toggle
+import recipeData from "../../data/recipes";
+
+const currentRecipe = recipeData[0]; // Add logic to set recipe id
 
 export default function IngredientList() {
   const [isToggleEnabled, setToggleEnabled] = useState(true);
@@ -15,31 +18,31 @@ export default function IngredientList() {
             <ul className="w-full">
               <li className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
                 <p className="font-bold text-red">OG</p>
-                <p>1.062</p>
+                <p>{currentRecipe.og}</p>
               </li>
               <li className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
                 <p className="font-bold text-red">FG</p>
-                <p>1.010</p>
+                <p>{currentRecipe.fg}</p>
               </li>
               <li className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
                 <p className="font-bold text-red">ABV</p>
-                <p>6.2%</p>
+                <p>{currentRecipe.abv}</p>
               </li>
               <li className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
                 <p className="font-bold text-red">EBC</p>
-                <p>12</p>
+                <p>{currentRecipe.ebc}</p>
               </li>
               <li className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
                 <p className="font-bold text-red">SRM</p>
-                <p>8</p>
+                <p>{currentRecipe.srm}</p>
               </li>
               <li className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
                 <p className="font-bold text-red">Volume</p>
-                <p>20L / 5gal</p>
+                <p>{currentRecipe.volume}</p>
               </li>
               <li className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
                 <p className="font-bold text-red">Beer Style</p>
-                <p>Double IPA</p>
+                <p>{currentRecipe.beerStyle}</p>
               </li>
             </ul>
           </div>

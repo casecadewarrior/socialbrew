@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react"; // imports state for the toggle
 import recipeData from "../../data/recipes";
 
-const currentRecipe = recipeData[0];
+const currentRecipe = recipeData[0]; // Add logic to set recipe id
 
 export default function IngredientList() {
   const [isToggleEnabled, setToggleEnabled] = useState(false);
