@@ -1,14 +1,16 @@
 import React from "react";
+import { useState } from "react"; // imports state for the toggle
 
 export default function IngredientList() {
-    return (
+  const [isToggleEnabled, setToggleEnabled] = useState(false);
+  return (
     <>
       <div className="w-full p-4 font-poppins mb-4">
         <div className="bg-red text-white px-4 py-3 font-bold flex justify-between">
           <p>Ingredients</p>
-          <button type="button" className="">+</button>
+          <button type="button" onClick={() => setToggleEnabled((prev) => !prev)}>+</button>
         </div>
-        <div className="w-full border-2 border-red border-t-0">
+        <div className={"w-full border-2 border-red border-t-0" + (isToggleEnabled ? null : " hidden")}>
           <div className="w-full text-red flex justify-between px-4 py-3 bg-cream text-sm">
             <p className="font-bold">Malt</p>
             <button type="button" className="">Edit</button>

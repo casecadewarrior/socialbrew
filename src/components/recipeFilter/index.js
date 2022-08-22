@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react"; // imports state for the hamburger bar
+import { useState } from "react"; // imports state for the toggle
 import ImageSearchIcon from '../../assets/images/search.svg';
 
 function handleSearch(e) {
