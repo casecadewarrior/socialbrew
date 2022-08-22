@@ -1,8 +1,8 @@
 import React from 'react';
 import IngredientList from '../components/ingredientList';
 import Header from './../components/header';
-import GeneralRecipeInfoList from './../components/generalRecipeInfoList'
-
+import GeneralRecipeInfoList from './../components/generalRecipeInfoList';
+import RecipeComments from './../components/recipeComments';
 
 
 export default function PublicRecipes() {
@@ -11,6 +11,7 @@ export default function PublicRecipes() {
             <Header/>
             <GeneralRecipeInfoList/>
             <IngredientList/>
+            <RecipeComments/>
         </main>
     );
 }
