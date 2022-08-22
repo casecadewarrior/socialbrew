@@ -8,7 +8,6 @@ export default function WidthChecker() {
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
-      const screenWidth = windowSize.innerWidth;
     }
     showMessage();
     window.addEventListener('resize', handleWindowResize);
@@ -16,7 +15,7 @@ export default function WidthChecker() {
     return () => {
       window.removeEventListener('resize', handleWindowResize);
     };
-  }, []);
+  },);
 
   function showMessage() {
     const screenWidth = windowSize.innerWidth;
