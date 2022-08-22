@@ -16,6 +16,7 @@ import UserProfile from "./screens/user-profile";
 import Calculators from "./screens/calculators";
 import AbvCalculator from "./screens/abv-calculator";
 import TotalCostCalculator from "./screens/total-cost-calculator";
+import Recipe from "./screens/recipe";
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,6 +26,7 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path="public-recipes" element={<PublicRecipes />} />
       <Route path="my-recipes" element={<MyRecipes />} />
+      <Route path="recipe" element={<Recipe />} />
       <Route path="social" element={<SocialFeed />} />
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="brewing-calculators" element={<Calculators />} />
