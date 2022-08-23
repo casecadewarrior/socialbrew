@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react"; // imports state for the toggle
 import StarRating from '.././starRating';
 
 /* 
@@ -18,6 +19,7 @@ function handleReplySubmit(e) {
 }
 
 export default function SocialPosts(props) {
+    const [isToggleEnabled, setToggleEnabled] = useState(false);
     const post = props;
     return (
     <>
@@ -79,12 +81,21 @@ export default function SocialPosts(props) {
                 </div>
                 <div className="w-full border-t border-grey">
                     <div className="w-full text-red px-4 py-2 flex justify-between">
-                        <p>Replies: <span className="font-bold">2</span></p>
-                        <button>+</button>
+                        <p>Replies: <span className="font-bold">{post.comments.length}</span></p>
+                        <button onClick={() => setToggleEnabled((prev) => !prev)}>{(isToggleEnabled ? '-' : "+")}</button>
                     </div>
-                    {/*
-                        Add replies per post and output them here
-                    */}
+                    <div className={"w-full" + (isToggleEnabled ? null : " hidden")}>
+                        <ul>
+                            {post.comments.map(comment => (
+                                <li className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
+                                    <img className="w-10 h-10 rounded-full border-2 border-red" src={comment.profileImageSrc} alt={comment.profileImageAlt}></img>
+                                    <div className="pl-4">
+                                    {comment.commentBody}
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </article>
             
