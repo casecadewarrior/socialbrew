@@ -12,7 +12,7 @@ export default
         srm: '13',
         ebc: '8',
         volume: '20L / 5 gal',
-        beerStyle: 'Double IPA',
+        beerStyle: 'Fruit IPA',
         grains: [ 
             {
                 grainName: '2-row',
