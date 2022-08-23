@@ -5,7 +5,7 @@ import RecipeItem from './../components/recipeItem';
 
 import recipeData from "../data/recipes";
 
-const currentRecipe = recipeData; // Add logic to set recipe id
+const currentRecipe = recipeData;
 
 export default function PublicRecipes() {
     return (

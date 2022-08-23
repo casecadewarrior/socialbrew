@@ -19,6 +19,15 @@ export default
         recipeImage: null,
         recipeUrl: null, 
         recipePublicRating: null,  
+        comments: [
+            {
+                authordisplayName: 'Username here 3',
+                profileImageSrc: 'https://www.fillmurray.com/200/200',
+                profileImageAlt: "Shauns profile",
+                commentBody: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis sem at ligula euismod, in feugiat quam sagittis. Etiam congue, quam a rhoncus ullamcorper, diam orci finibus quam, vel ultrices lorem nunc ac metus. Ut iaculis fringilla dolor, sed blandit nulla gravida nec. Donec vulputate, massa in semper mattis, ex dui malesuada nibh, at sagittis nisl leo eu lorem. ',
+                likeCount: '20',
+            },
+        ],
     },
     {
         id: 2,
@@ -30,6 +39,28 @@ export default
         postImageAlt: "Shauns profile",
         likeCount: 14,
         recipeId: null,
+        recipeName: null, 
+        recipeBeerStyle: null, 
+        recipeAbv: null, 
+        recipeImage: null,
+        recipeUrl: null, 
+        recipePublicRating: null,
+        comments: [
+            {
+                authordisplayName: 'Username here 3',
+                profileImageSrc: 'https://www.fillmurray.com/200/200',
+                profileImageAlt: "Shauns profile",
+                commentBody: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis sem at ligula euismod, in feugiat quam sagittis. Etiam congue, quam a rhoncus ullamcorper, diam orci finibus quam, vel ultrices lorem nunc ac metus. Ut iaculis fringilla dolor, sed blandit nulla gravida nec. Donec vulputate, massa in semper mattis, ex dui malesuada nibh, at sagittis nisl leo eu lorem. ',
+                likeCount: '20',
+            },
+            {
+                authordisplayName: 'Username here 4',
+                profileImageSrc: 'https://www.fillmurray.com/200/200',
+                profileImageAlt: "Shauns profile",
+                commentBody: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis sem at ligula euismod, in feugiat quam sagittis. Etiam congue, quam a rhoncus ullamcorper, diam orci finibus quam, vel ultrices lorem nunc ac metus. Ut iaculis fringilla dolor, sed blandit nulla gravida nec. Donec vulputate, massa in semper mattis, ex dui malesuada nibh, at sagittis nisl leo eu lorem. ',
+                likeCount: '20',
+            }
+        ],
     },
     {
         id: 3,
@@ -48,6 +79,9 @@ export default
         recipeUrl: '/recipe/3', 
         recipeSummary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur, leo ut molestie aliquet.',
         recipePublicRating: 5,
+        comments: [
+            
+        ],
     },
     
   ]
