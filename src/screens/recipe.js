@@ -9,7 +9,6 @@ import recipeData from "../data/recipes";
 const currentRecipe = recipeData[0]; // Add logic to set recipe id
 
 export default function PublicRecipes() {
-    const beerStyle = currentRecipe.beerStyle;
     return (
         <main>
             <Header/>

@@ -3,6 +3,7 @@ export default
     {
         id: 1,
         beerName: 'Punk IPA',
+        recipeDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lobortis, magna eget tempus dictum, tortor turpis interdum ex, in pharetra arcu nisi vel enim. ',
         creationTimeStamp: '2022-08-14T04:00:00Z',
         authordisplayName: 'displayNameJohana',
         likeCount: 134,
@@ -84,6 +85,7 @@ export default
     {
         id: 2,
         beerName: 'Just another IPA',
+        recipeDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lobortis, magna eget tempus dictum, tortor turpis interdum ex, in pharetra arcu nisi vel enim. ',
         creationTimeStamp: '2022-08-14T04:00:00Z',
         authordisplayName: 'displayNameJohana',
         likeCount: 134,
