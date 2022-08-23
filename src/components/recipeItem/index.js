@@ -1,7 +1,8 @@
 import React from "react";
 import StarRating from '.././starRating';
 
-export default function RecipeItem() {
+export default function RecipeItem(props) {
+    const recipe = props;
     return (
         <>
     <div className="post-item__content--recipe font-poppins w-full mb-4 px-4">
@@ -11,11 +12,11 @@ export default function RecipeItem() {
                     <img src="https://image.shutterstock.com/image-photo/handsome-adult-brewer-inspecting-process-600w-1433953739.jpg" alt="random alt"/>
                 </div>
                 <div className="w-1/2 pl-2 text-xs">
-                    <h2 className="font-bold text-sm">Dog G</h2>
-                    <h3><span className="font-bold">Style:</span> Imperial Stout</h3>
-                    <h4><span className="font-bold">ABV:</span> 5.3%</h4>
+                    <h2 className="font-bold text-sm">{recipe.beerName}</h2>
+                    <h3><span className="font-bold">Style:</span> {recipe.beerStyle}</h3>
+                    <h4><span className="font-bold">ABV:</span> {recipe.abv}</h4>
                     <div className="text-xs mt-2">
-                        <p>Hsdhjsdh sjdh jsdh jshd jsdhs hjshd ssd</p>
+                        <p>{recipe.recipeDescription}</p>
                     </div>
                 </div>
             </div>
@@ -25,7 +26,7 @@ export default function RecipeItem() {
                     <StarRating />
                 </div>
                 <div className="w-1/3 flex">
-                    <a href="/url" className="uppercase text-red font-bold text-sm p-2 text-center w-full">View Recipe</a>
+                    <a href="/recipe" className="uppercase text-red font-bold text-sm p-2 text-center w-full">View Recipe</a>
                 </div>
             </div>
         </div>
