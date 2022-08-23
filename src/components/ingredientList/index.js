@@ -1,13 +1,9 @@
 import React from "react";
 import { useState } from "react"; // imports state for the toggle
-import recipeData from "../../data/recipes";
 
-const currentRecipe = recipeData[0]; // Add logic to set recipe id
-
-export default function IngredientList() {
+export default function IngredientList(props) {
   const [isToggleEnabled, setToggleEnabled] = useState(false);
-
-  console.log(currentRecipe);
+  const recipe = props;
   return (
     <>
       <div className="w-full p-4 font-poppins">
@@ -22,7 +18,7 @@ export default function IngredientList() {
           </div>
           <div className="w-full">
             <ul className="w-full">
-              {currentRecipe.grains.map(grain => (
+              {recipe.grains.map(grain => (
               <li className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
                 <p className="font-bold">{grain.grainName}</p>
                 <p>{grain.grainAmount}</p>
@@ -36,7 +32,7 @@ export default function IngredientList() {
               <button type="button" className="">Edit</button>
             </div>
             <div className="w-full">
-              {currentRecipe.yeasts.map(yeast => (
+              {recipe.yeasts.map(yeast => (
                 <ul className="w-full">
                   <li className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
                     <p className="font-bold">{yeast.yeastName}</p>
@@ -53,7 +49,7 @@ export default function IngredientList() {
             </div>
             <div className="w-full">
               <ul className="w-full">
-                {currentRecipe.hops.map(hop => (
+                {recipe.hops.map(hop => (
                 <li className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
                   <p className="font-bold">{hop.hopName}</p>
                   <p>{hop.additionTime} - {hop.hopPurpose}</p>
@@ -70,7 +66,7 @@ export default function IngredientList() {
             </div>
             <div className="w-full">
               <ul className="w-full">
-                {currentRecipe.otherIngredients.map(other => (
+                {recipe.otherIngredients.map(other => (
                 <li className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
                   <p className="font-bold">{other.otherName}</p>
                   <p>{other.otherAmount}</p>
@@ -86,7 +82,7 @@ export default function IngredientList() {
             </div>
             <div className="w-full">
               <ul className="w-full">
-                {currentRecipe.chemicals.map(chemical => (
+                {recipe.chemicals.map(chemical => (
                 <li className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
                   <p className="font-bold">{chemical.chemicalName}</p>
                   <p>{chemical.chemicalAmount}</p>
