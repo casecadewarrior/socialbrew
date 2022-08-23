@@ -3,20 +3,18 @@ import RecipeFilter from '../components/recipeFilter';
 import Header from './../components/header';
 import RecipeItem from './../components/recipeItem';
 
+import recipeData from "../data/recipes";
 
+const currentRecipe = recipeData;
 
 export default function PublicRecipes() {
     return (
         <main>
             <Header/>
             <RecipeFilter />
-            <RecipeItem />
-            <RecipeItem />
-            <RecipeItem />
-            <RecipeItem />
-            <RecipeItem />
-            <RecipeItem />
-            <RecipeItem />
+            {currentRecipe.map((data, idx) => (
+                <RecipeItem {...data}/>
+            ))}
         </main>
     );
 }
