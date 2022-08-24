@@ -1,3 +1,6 @@
+import beer1Image from './../assets/images/beer-one.png';
+import beer2Image from './../assets/images/beer-two.jpeg';
+
 export default
 [
     {
@@ -6,6 +9,8 @@ export default
         recipeDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lobortis, magna eget tempus dictum, tortor turpis interdum ex, in pharetra arcu nisi vel enim. ',
         creationTimeStamp: '2022-08-14T04:00:00Z',
         authordisplayName: 'displayNameJohana',
+        recipeImageSrc: beer1Image,
+        recipeImageAlt: '',
         likeCount: 134,
         og: '1.010',
         fg: '1.062',
@@ -88,6 +93,8 @@ export default
         recipeDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lobortis, magna eget tempus dictum, tortor turpis interdum ex, in pharetra arcu nisi vel enim. ',
         creationTimeStamp: '2022-08-14T04:00:00Z',
         authordisplayName: 'displayNameJohana',
+        recipeImageSrc: beer2Image,
+        recipeImageAlt: '',
         likeCount: 134,
         og: '1.010',
         fg: '1.062',

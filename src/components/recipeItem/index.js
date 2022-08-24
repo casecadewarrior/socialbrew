@@ -9,7 +9,7 @@ export default function RecipeItem(props) {
         <div className="w-full border-2 border-red">
             <div className="w-full p-2 flex">
                 <div className="w-1/2">
-                    <img src="https://image.shutterstock.com/image-photo/handsome-adult-brewer-inspecting-process-600w-1433953739.jpg" alt="random alt"/>
+                    <img src={recipe.recipeImageSrc} alt="random alt"/>
                 </div>
                 <div className="w-1/2 pl-2 text-xs">
                     <h2 className="font-bold text-sm">{recipe.beerName}</h2>
