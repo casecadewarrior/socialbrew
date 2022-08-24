@@ -3,6 +3,7 @@ import IngredientList from '../components/ingredientList';
 import Header from './../components/header';
 import GeneralRecipeInfoList from './../components/generalRecipeInfoList';
 import RecipeComments from './../components/recipeComments';
+import PageTitleDescription from './../components/pageTitleDescription';
 
 import recipeData from "../data/recipes";
 
@@ -12,6 +13,7 @@ export default function PublicRecipes() {
     return (
         <main>
             <Header/>
+            <PageTitleDescription {...currentRecipe}/>
             <GeneralRecipeInfoList {...currentRecipe}/>
             <IngredientList {...currentRecipe}/>
             <RecipeComments {...currentRecipe}/>

@@ -9,7 +9,7 @@ export default function IngredientList(props) {
       <div className="w-full p-4 pb-0 font-poppins">
         <div className="bg-red text-white px-4 py-3 font-bold flex justify-between">
           <p>Generial Recipe Information</p>
-          <button type="button" onClick={() => setToggleEnabled((prev) => !prev)}>+</button>
+          <button type="button" onClick={() => setToggleEnabled((prev) => !prev)}>{(isToggleEnabled ? '-' : "+")}</button>
         </div>
         <div className={"w-full border-2 border-red border-t-0" + (isToggleEnabled ? null : " hidden")}>
           <div className="w-full">
