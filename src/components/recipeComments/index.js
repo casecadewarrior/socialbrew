@@ -9,7 +9,7 @@ export default function IngredientList(props) {
       <div className="w-full px-4 pb-0 font-poppins mb-4">
         <div className="bg-black text-white px-4 py-3 font-bold flex justify-between">
           <p>Comments</p>
-          <button type="button" onClick={() => setToggleEnabled((prev) => !prev)}>+</button>
+          <button type="button" onClick={() => setToggleEnabled((prev) => !prev)}>{(isToggleEnabled ? '-' : "+")}</button>
         </div>
         <div className={"w-full border-2 border-black border-t-0" + (isToggleEnabled ? null : " hidden")}>
           <div className="w-full">
