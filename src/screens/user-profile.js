@@ -15,7 +15,7 @@ export default function SocialFeed() {
         <div>
             <Header/>
             <ProfileHeader/>
-            {posts.map((data, idx) => (
+            {posts.map((data) => (
                 <SocialPosts {...data}/>
             ))}
         </div>

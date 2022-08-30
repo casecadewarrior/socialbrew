@@ -15,7 +15,7 @@ export default function PublicRecipes() {
             <RecipeFilter />
             <AddRecipeButton />
             {currentRecipe.map((data, idx) => (
-                <RecipeItem {...data}/>
+                <RecipeItem key={idx} {...data}/>
             ))}
         </main>
     );

@@ -23,8 +23,8 @@ export default function SocialPosts(props) {
     const post = props;
     return (
     <>
-      <section className="post-container w-full font-poppins">
-            <article key={post.id} className="post-item w-full flex flex-col border-b border-grey">
+      <section key={post.id} className="post-container w-full font-poppins">
+            <article className="post-item w-full flex flex-col border-b border-grey">
                 <div className="p-4 w-full flex flex-col border-b border-grey">
                     <div className="post-item__header w-full mb-4 flex items-center">
                         <img className="w-14 h-14 rounded-full border-red border-2 mr-4" src="https://www.fillmurray.com/200/200" alt="{profileUser.profileImageAlt}"/>

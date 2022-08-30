@@ -20,7 +20,7 @@ export default function SocialFeed() {
             <Header/>
             <SharePostForm/>
             {currentPost.map((data, idx) => (
-                <SocialPosts {...data}/>
+                <SocialPosts key={idx} {...data}/>
             ))}
         </div>
     );
