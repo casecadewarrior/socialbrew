@@ -13,7 +13,7 @@ export default function PublicRecipes() {
             <Header/>
             <RecipeFilter />
             {currentRecipe.map((data, idx) => (
-                <RecipeItem {...data}/>
+                <RecipeItem key={idx} {...data}/>
             ))}
         </div>
     );
