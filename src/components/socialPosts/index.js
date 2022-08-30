@@ -23,7 +23,7 @@ export default function SocialPosts(props) {
     const post = props;
     return (
     <>
-      <section key={post.id} className="post-container w-full font-poppins">
+      <section className="post-container w-full font-poppins">
             <article className="post-item w-full flex flex-col border-b border-grey">
                 <div className="p-4 w-full flex flex-col border-b border-grey">
                     <div className="post-item__header w-full mb-4 flex items-center">
@@ -87,7 +87,7 @@ export default function SocialPosts(props) {
                     <div className={"w-full" + (isToggleEnabled ? null : " hidden")}>
                         <ul>
                             {post.comments.map(comment => (
-                                <li className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
+                                <li key={comment.commentId} className="w-full text-black flex px-4 py-3 justify-between text-sm border-b-2 border-input">
                                     <img className="w-10 h-10 rounded-full border-2 border-red" src={comment.profileImageSrc} alt={comment.profileImageAlt}></img>
                                     <div className="pl-4">
                                     {comment.commentBody}

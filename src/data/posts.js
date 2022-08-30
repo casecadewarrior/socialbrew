@@ -21,6 +21,7 @@ export default
         recipePublicRating: null,  
         comments: [
             {
+                commentId: '1',
                 authordisplayName: 'Username here 3',
                 profileImageSrc: 'https://www.fillmurray.com/200/200',
                 profileImageAlt: "Shauns profile",
@@ -47,6 +48,7 @@ export default
         recipePublicRating: null,
         comments: [
             {
+                commentId: '2',
                 authordisplayName: 'Username here 3',
                 profileImageSrc: 'https://www.fillmurray.com/200/200',
                 profileImageAlt: "Shauns profile",
@@ -54,6 +56,7 @@ export default
                 likeCount: '20',
             },
             {
+                commentId: '3',
                 authordisplayName: 'Username here 4',
                 profileImageSrc: 'https://www.fillmurray.com/200/200',
                 profileImageAlt: "Shauns profile",

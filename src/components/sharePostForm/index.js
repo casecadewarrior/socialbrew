@@ -31,7 +31,7 @@ export default function sharePostForm() {
         <form onSubmit={handleSubmit} className="font-poppins">
             <div className="w-full bg-cream p-4 flex justify-between">
                 <div className="overflow-hidden border-red border-2 relative w-10 h-10 bg-gray-100 rounded-full dark:bg-gray-600">
-                    <svg className="absolute -left-1 w-12 h-12 text-gray-400" fillRule="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                    <svg className="absolute -left-1 w-12 h-12 text-gray-400" fillRule="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"></path></svg>
                 </div>
                 <textarea className="flex-grow ml-4 p-2 h-28 bg-input" placeholder="Hey, What's brewing?"></textarea>
             </div>
